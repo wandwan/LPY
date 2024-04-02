@@ -32,13 +32,10 @@ To compile an LPy file into a Python file, run the following command:
 
 ``python lpy.py (name of file I want to compile from lpy to py)``
 
-```
 
 Replace `(name of file I want to compile from lpy to py)` with the path to your LPy file.
 
 If you haven't saved your API key in the `.apikey` file, you can provide it using the `-a` flag followed by the key:
-
-```
 
 ``python lpy.py (name of file I want to compile from lpy to py) -a your_api_key``
 
