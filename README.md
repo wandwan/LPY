@@ -1,5 +1,6 @@
 
-```markdown
+
+
 # LPy to Python Compiler
 
 This project provides a Python script that compiles an LPy file into a Python file. The LPy file allows you to write pseudo-code snippets wrapped in backticks and tagged with `[csm]` (ChatGPT Save Me!). The script uses the OpenAI ChatGPT model to convert these pseudo-code snippets into valid Python code.
@@ -12,17 +13,13 @@ This project provides a Python script that compiles an LPy file into a Python fi
 
 You can install the required libraries using the following command:
 
-```
-
 ``pip install openai pyparsing``
-
-```
 
 ## Setup
 
 1. Obtain an API key from OpenAI by signing up for an account at [https://openai.com](https://openai.com).
-
 2. Save your API key in a file named `.apikey` in one of the following locations:
+
    - On Windows: `%APPDATA%\.apikey`
    - On macOS: `~/.apikey`
    - On Linux: `~/.apikey`
@@ -32,8 +29,6 @@ You can install the required libraries using the following command:
 ## Usage
 
 To compile an LPy file into a Python file, run the following command:
-
-```
 
 ``python lpy.py (name of file I want to compile from lpy to py)``
 
@@ -46,8 +41,6 @@ If you haven't saved your API key in the `.apikey` file, you can provide it usin
 ```
 
 ``python lpy.py (name of file I want to compile from lpy to py) -a your_api_key``
-
-```
 
 The script will process the LPy file, convert the pseudo-code snippets tagged with `[csm]` into valid Python code using ChatGPT, and generate a corresponding Python file with the same name but with a `.py` extension.
 
